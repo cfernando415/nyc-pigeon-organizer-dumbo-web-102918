@@ -10,9 +10,10 @@ def nyc_pigeon_organizer(data)
       #key2 == :purple, value2 == ["Theo", "Peter Jr.", "Lucky"]
       value2.each do |element|
         if pigeon_list.has_key?(element)
-          #
+          pigeon_list[element][key1] << key2.to_s
         else
-          pigeon_list[element] = 
+          pigeon_list[element][key1] = key2.to_s
+        end
     end
   end
 end
