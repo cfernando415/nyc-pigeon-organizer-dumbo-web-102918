@@ -15,7 +15,6 @@ def nyc_pigeon_organizer(data)
             else
               pigeon_list[element][:lives] = [key2.to_s]
           end
-            
         else
           pigeon_list[element] = {key1 => [key2.to_s]}
         end
