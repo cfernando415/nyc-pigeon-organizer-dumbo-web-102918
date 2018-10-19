@@ -7,7 +7,10 @@ def nyc_pigeon_organizer(data)
     value1.each do |key2, value2|
       value2.each do |element|
         if pigeon_list.has_key?(element)
-          pigeon_list[element][key1] << key2.to_s
+          case key1
+            when :color
+              pigeon_list[element][key1] << key2.to_s
+            when 
         else
           pigeon_list[element] = {key1 => [key2.to_s]}
         end
