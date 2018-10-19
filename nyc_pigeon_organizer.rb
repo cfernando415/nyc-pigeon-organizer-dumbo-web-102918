@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
       value2.each do |element|
         pigeon_list[element] = key1
         #binding.pry
-        pigeon_list[element][key1] = key2.to_s
+        pigeon_list[element][key1] = key2
         binding.pry
       end
     end
