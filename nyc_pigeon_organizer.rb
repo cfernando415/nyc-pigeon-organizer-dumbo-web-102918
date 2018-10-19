@@ -10,7 +10,8 @@ def nyc_pigeon_organizer(data)
           case key1
             when :color
               pigeon_list[element][key1] << key2.to_s
-            when 
+            when :gender
+              pigeon_list[element] = key1]
         else
           pigeon_list[element] = {key1 => [key2.to_s]}
         end
