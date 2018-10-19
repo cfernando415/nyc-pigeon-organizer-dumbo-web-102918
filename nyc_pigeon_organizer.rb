@@ -8,7 +8,7 @@ def nyc_pigeon_organizer(data)
     
     value1.each do |key2, value2|
       #key2 == :purple, value2 == ["Theo", "Peter Jr.", "Lucky"]
-      binding.pry
+      #binding.pry
       value2.each do |element|
         #binding.pry
         if pigeon_list.has_key?(element)
