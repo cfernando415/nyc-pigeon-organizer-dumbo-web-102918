@@ -8,8 +8,9 @@ def nyc_pigeon_organizer(data)
     
     types.each do |key2, value2|
       #key2 == :purple, value2 == ["Theo", "Peter Jr.", "Lucky"]
+      binding.pry
       value2.each do |element|
-        binding.pry
+        #binding.pry
         if pigeon_list.has_key?(element)
           pigeon_list[element][key1] << key2.to_s
         else
