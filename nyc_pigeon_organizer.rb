@@ -8,7 +8,7 @@ def nyc_pigeon_organizer(data)
     
     types.each do |key2, value2|
       #key2 == :purple, value2 == ["Theo", "Peter Jr.", "Lucky"]
-      value.each do |element|
+      value2.each do |element|
         if pigeon_list.has_key?(element)
           #
         else
