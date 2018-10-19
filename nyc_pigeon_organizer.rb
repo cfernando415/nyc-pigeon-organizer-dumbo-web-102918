@@ -9,7 +9,6 @@ def nyc_pigeon_organizer(data)
         if pigeon_list.has_key?(element)
           pigeon_list[element] = {key1 => [key2.to_s]}
         else
-          binding.pry
           pigeon_list[element][key1] << key2.to_s
         end
       end
