@@ -10,9 +10,7 @@ def nyc_pigeon_organizer(data)
       #key2 == :purple, value2 == ["Theo", "Peter Jr.", "Lucky"]
       #binding.pry
       value2.each do |element|
-        pigeon_list[element] = key1
-        #binding.pry
-        pigeon_list[element][key1] = key2
+        pigeon_list[element] = {key1 => key2.to_s}
         binding.pry
       end
     end
